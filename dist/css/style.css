@@ -1,0 +1,294 @@
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type='checkbox'],
+input[type='radio'] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type='search'] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+.m-t-1 {
+  margin-top: 1px; }
+
+.m-t-2 {
+  margin-top: 2px; }
+
+.m-t-3 {
+  margin-top: 3px; }
+
+.m-t-4 {
+  margin-top: 4px; }
+
+.m-t-5 {
+  margin-top: 5px; }
+
+.m-t-6 {
+  margin-top: 6px; }
+
+.m-t-7 {
+  margin-top: 7px; }
+
+.m-t-8 {
+  margin-top: 8px; }
+
+.m-t-9 {
+  margin-top: 9px; }
+
+.m-t-10 {
+  margin-top: 10px; }
+
+.m-t-11 {
+  margin-top: 11px; }
+
+.m-t-12 {
+  margin-top: 12px; }
+
+.m-t-13 {
+  margin-top: 13px; }
+
+.m-t-14 {
+  margin-top: 14px; }
+
+.m-t-15 {
+  margin-top: 15px; }
+
+.m-t-16 {
+  margin-top: 16px; }
+
+.m-t-17 {
+  margin-top: 17px; }
+
+.m-t-18 {
+  margin-top: 18px; }
+
+.m-t-19 {
+  margin-top: 19px; }
+
+.m-t-20 {
+  margin-top: 20px; }
+
+.m-t-21 {
+  margin-top: 21px; }
+
+.m-t-22 {
+  margin-top: 22px; }
+
+.m-t-23 {
+  margin-top: 23px; }
+
+.m-t-24 {
+  margin-top: 24px; }
+
+.m-t-25 {
+  margin-top: 25px; }
+
+.m-t-26 {
+  margin-top: 26px; }
+
+.m-t-27 {
+  margin-top: 27px; }
+
+.m-t-28 {
+  margin-top: 28px; }
+
+.m-t-29 {
+  margin-top: 29px; }
+
+.m-t-30 {
+  margin-top: 30px; }
+
+* {
+  font-size: 14px;
+  font-family: "Roboto", serif; }
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100wv; } }
+
+.page-about-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 768px) {
+    .page-about-container {
+      background-color: red; } }
+
+.flex-block {
+  color: #B2947D;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .flex-block.two {
+    justify-content: space-between; }
+  .flex-block.center {
+    justify-content: center; }
+  .flex-block .child-item {
+    color: red; }
+  @media (max-width: 768px) {
+    .flex-block {
+      width: 100wv; } }
