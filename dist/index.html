@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>myFixer</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <div class="center">
-      <h1>Hello world! :)</h1>
-    </div>
+    <header class="header">
+      <a href="#" class="header__logo"></a>
+      <span class="header__button">Do not have an account? 
+        <a href="#" class="header__link">
+          Sign up
+        </a>
+      </span>
+    </header>
+    <main class="main">
+      <form action="#" class="login-form">
+        <p class="login-form__label">Sign in</p>
+        <p class="login-form__element">
+          <label for="email">
+            <input class="login-form__input" id="email" type="text">
+          </label>
+        </p>
+        <p class="login-form__element">
+          <label for="password">
+            <input class="login-form__input" id="password" type="password">
+          </label>
+        </p>
+        <p class="login-form__element">
+          <a href="#" class="login-form__helper">Forgot password?</a>
+        </p>
+        <p class="login-form__element">
+          <input type="submit">
+        </p>
+      </form> 
+    </main>
+    <footer class="footer">
+
+    </footer>
     <script src="/reload/reload.js"></script>
   </body>
 </html>
