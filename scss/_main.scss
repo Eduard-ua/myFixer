@@ -2,6 +2,10 @@
 // variables
 @import "./core/variables";
 
+// Mixins
+@import "./core/mixins";
+
+
 body {
   background-color: #F9FAFC;
   color: #000000;
@@ -16,7 +20,6 @@ body {
   margin: 0 auto;
   padding-top: 20px; // todo mobile width
   padding-bottom: 20px;
-  border: 1px solid green;
 
 
   &__logo {
@@ -26,7 +29,6 @@ body {
     background-repeat: no-repeat;
     height: 35px;
     width: 138px;
-    border: 1px solid red;
   }
 
   &__button {
@@ -34,7 +36,7 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    border: 1px solid red;
+    text-align: right;
   }
 
   &__link {
@@ -42,7 +44,6 @@ body {
     letter-spacing: 0.28px;
     color: #2A74DB;
     text-decoration: none;
-    border: 1px solid red;
   }
 }
 
@@ -52,10 +53,20 @@ body {
   align-items: center;
   padding-bottom: 150px;
   padding-top: 150px;
-  border: 1px solid yellow;
+  @include bp-576 {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
 }
 
 .login-form {
+  @include bp-576{
+    padding: 30px 20px;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   max-width: 632px;
   padding: 80px 115px; // todo mobile width
   background: #FFFFFF;
@@ -63,7 +74,6 @@ body {
   border-radius: 10px;
   margin-bottom: 150px;
   margin-top: 150px;
-  border: 1px solid red;
 
   &__label {
     font-family: $Exo_2;
@@ -80,6 +90,9 @@ body {
   }
 
   &__input {
+    @include bp-576 {
+      max-width: 250px;
+    }
     border: 2px solid #F2F2F2;
     border-radius: 2px;
     background-color: #FCFCFC;
@@ -87,6 +100,7 @@ body {
     color: rgba(135, 144, 167, 0.57);
     outline: none;
     width: 400px;
+   
   }
 
   &__input::-moz-placeholder { 
@@ -125,4 +139,12 @@ body {
   // }
 }
 
+
+.login-form { 
+  
+
+  &__input {
+    
+  }
+}
 
