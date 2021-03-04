@@ -1,18 +1,22 @@
 
 // variables
-@import "variables";
+@import "./core/variables";
 
 body {
   background-color: #F9FAFC;
   color: #000000;
   font-family: $Roboto;
+  font-size: 14px;
+  line-height: 16px;
 }
 .header {
   display: flex;
   justify-content: space-between;
-  max-width: 180px;
+  max-width: 1180px;
+  margin: 0 auto;
   padding-top: 20px; // todo mobile width
   padding-bottom: 20px;
+  border: 1px solid green;
 
 
   &__logo {
@@ -22,6 +26,23 @@ body {
     background-repeat: no-repeat;
     height: 35px;
     width: 138px;
+    border: 1px solid red;
+  }
+
+  &__button {
+    color: #222428;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid red;
+  }
+
+  &__link {
+    font-weight: bold;
+    letter-spacing: 0.28px;
+    color: #2A74DB;
+    text-decoration: none;
+    border: 1px solid red;
   }
 }
 
@@ -31,6 +52,7 @@ body {
   align-items: center;
   padding-bottom: 150px;
   padding-top: 150px;
+  border: 1px solid yellow;
 }
 
 .login-form {
@@ -41,5 +63,66 @@ body {
   border-radius: 10px;
   margin-bottom: 150px;
   margin-top: 150px;
+  border: 1px solid red;
+
+  &__label {
+    font-family: $Exo_2;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #002396;
+  }
+
+  &__element {
+    &-helper {
+      text-align: right;
+    }
+  }
+
+  &__input {
+    border: 2px solid #F2F2F2;
+    border-radius: 2px;
+    background-color: #FCFCFC;
+    padding: 10px;
+    color: rgba(135, 144, 167, 0.57);
+    outline: none;
+    width: 400px;
+  }
+
+  &__input::-moz-placeholder { 
+    color: rgba(135, 144, 167, 0.57);
+  }
+
+  &__input::-webkit-input-placeholder { 
+    color: rgba(135, 144, 167, 0.57);
+  }
+
+  &__input:focus {
+    color: #222428;
+    border-left-color: #2A74DB;
+  }
+
+  &__helper {
+    text-decoration: none;
+    font-size: 12px;
+    color: #222428;
+  }
+
+  &__submit {
+    font-family: $Exo_2;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    padding: 10px 60px;
+    background: #0AD69C;
+    border-radius: 2px;
+    border: none;
+  }
+
+  // &__submit:focus {
+  //   border: none;
+  //   outline: none;
+  // }
 }
+
 

@@ -173,28 +173,46 @@ th {
 body {
   background-color: #F9FAFC;
   color: #000000;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 16px; }
 
 .header {
   display: flex;
   justify-content: space-between;
-  max-width: 180px;
+  max-width: 1180px;
+  margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  border: 1px solid green; }
   .header__logo {
     background-position: center;
     background-image: url("../img/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 35px;
-    width: 138px; }
+    width: 138px;
+    border: 1px solid red; }
+  .header__button {
+    color: #222428;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid red; }
+  .header__link {
+    font-weight: bold;
+    letter-spacing: 0.28px;
+    color: #2A74DB;
+    text-decoration: none;
+    border: 1px solid red; }
 
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 150px;
-  padding-top: 150px; }
+  padding-top: 150px;
+  border: 1px solid yellow; }
 
 .login-form {
   max-width: 632px;
@@ -203,4 +221,41 @@ body {
   box-shadow: 0px 5px 40px rgba(0, 45, 113, 0.06);
   border-radius: 10px;
   margin-bottom: 150px;
-  margin-top: 150px; }
+  margin-top: 150px;
+  border: 1px solid red; }
+  .login-form__label {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #002396; }
+  .login-form__element-helper {
+    text-align: right; }
+  .login-form__input {
+    border: 2px solid #F2F2F2;
+    border-radius: 2px;
+    background-color: #FCFCFC;
+    padding: 10px;
+    color: rgba(135, 144, 167, 0.57);
+    outline: none;
+    width: 400px; }
+  .login-form__input::-moz-placeholder {
+    color: rgba(135, 144, 167, 0.57); }
+  .login-form__input::-webkit-input-placeholder {
+    color: rgba(135, 144, 167, 0.57); }
+  .login-form__input:focus {
+    color: #222428;
+    border-left-color: #2A74DB; }
+  .login-form__helper {
+    text-decoration: none;
+    font-size: 12px;
+    color: #222428; }
+  .login-form__submit {
+    font-family: "Exo 2", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    padding: 10px 60px;
+    background: #0AD69C;
+    border-radius: 2px;
+    border: none; }
