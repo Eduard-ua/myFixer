@@ -1,0 +1,115 @@
+// body {
+//     background-color: #ffffff;
+// }
+.header-cabinet {
+    box-sizing: border-box;
+    max-width: 1400px;
+    min-height: 60px;
+    padding-left: 140px;  //TODO mpbile width
+    padding-right: 140px;  //TODO mpbile width
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    
+}
+
+.breadcrumb,
+.personal-settings__list,
+.main-menu__list,
+.cabinet__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb {
+    display: flex;
+
+    &__item {
+        margin-right: 10px;
+    }
+
+    &__item::before {
+        content: " ";
+        display: inline-flex;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        background-image: url("../img/breadcrumbs_arrow.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__item:first-of-type::before {
+        display: none;
+    }
+}
+
+.personal-settings__list {
+    display: flex;
+    align-items: center;
+    &::after {
+        content: " ";
+        display: inline-flex;
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+        background-image: url("../img/personal-settings_arrow.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+
+.main {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.main-menu {
+    background-color: #01134E;
+    width: 80px;
+    height: 100vh;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    padding-top: 20px;
+    padding-bottom:20px;
+    left: 0;
+    top: 0;
+
+    &__logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30px;
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        height: 50px;
+        width: 100%;
+        border-left: 4px solid transparent;
+        box-sizing: border-box;
+    }
+
+    &__item:hover {
+        border-left: 4px solid #0AD69C;
+    }
+
+    &__img {
+        width: 20px;
+        height: 20px;
+        padding: 15px;
+        padding-left: 30px;
+        cursor: pointer;
+    }
+}

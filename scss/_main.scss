@@ -12,7 +12,24 @@ body {
   font-family: $Roboto;
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
 }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -175,5 +192,7 @@ body {
   //   outline: none;
   // }
 }
+
+
 
 
