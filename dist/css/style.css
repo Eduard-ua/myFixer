@@ -207,8 +207,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 150px;
-  padding-top: 150px; }
+  padding-bottom: 40px;
+  padding-top: 40px; }
   @media (max-width: 576px) and (min-width: 1px) {
     .main {
       padding-bottom: 50px;
@@ -220,8 +220,8 @@ body {
   background: #FFFFFF;
   box-shadow: 0px 5px 40px rgba(0, 45, 113, 0.06);
   border-radius: 10px;
-  margin-bottom: 150px;
-  margin-top: 150px; }
+  margin-bottom: 50px;
+  margin-top: 50px; }
   @media (max-width: 576px) and (min-width: 1px) {
     .login-form {
       padding: 30px 20px;
@@ -265,6 +265,50 @@ body {
     line-height: 19px;
     color: #ffffff;
     padding: 10px 60px;
+    margin-top: 30px;
     background: #0AD69C;
     border-radius: 2px;
     border: none; }
+
+.header {
+  position: relative; }
+
+.password-reset {
+  padding-top: 57px;
+  position: relative;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  width: 650px;
+  box-sizing: border-box; }
+  .password-reset:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 437px;
+    height: 437px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: rgba(254, 254, 254, 0.54);
+    box-shadow: 0px 0px 42px rgba(231, 231, 231, 0.11), 0px 0px 0px 90px rgba(254, 254, 254, 0.54), 0px 0px 164px 132px rgba(231, 231, 231, 0.11), 0px 0px 0px 170px rgba(254, 254, 254, 0.54), 0px 0px 212px rgba(254, 254, 254, 0.54), 0px 0px 0px 240px rgba(254, 254, 254, 0.54), 0px 0px 272px rgba(231, 231, 231, 0.11); }
+  .password-reset__image {
+    position: relative;
+    width: 150px;
+    height: 170px;
+    margin-bottom: 30px; }
+  .password-reset__title {
+    position: relative;
+    color: #2A74DB;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.4px;
+    margin: 10px 0; }
+  .password-reset__subtitle {
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    margin: 10px 0; }
