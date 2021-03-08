@@ -16,6 +16,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1180px;
   margin: 0 auto;
   padding-top: 20px; // todo mobile width
@@ -32,6 +33,10 @@ body {
   }
 
   &__button {
+    @include bp-576 {
+      font-size: 14px;
+      line-height: 14px;
+    }
     color: #222428;
     font-weight: 300;
     font-size: 16px;
@@ -82,11 +87,40 @@ body {
     line-height: 34px;
     color: #002396;
     max-width: 400px;
+
+    &-password {
+      color: #01134E;
+    }
+  }
+
+  
+  &__block-name {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 400px;
+    @include bp-576 {
+      max-width: 250px;
+    }
   }
 
   &__element {
     &-helper {
       text-align: right;
+    }
+
+    &-name {
+      width: 45%;
+      .login-form__input {
+        width: 100%;
+        @include bp-576{
+          max-width: 250px;
+        }
+      }
+
+      @include bp-576 {
+        width: 100%;
+      }
     }
   }
 
@@ -101,6 +135,7 @@ body {
     color: rgba(135, 144, 167, 0.57);
     outline: none;
     width: 400px;
+    margin-bottom: 5px;
    
   }
 

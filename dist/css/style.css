@@ -180,6 +180,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1180px;
   margin: 0 auto;
   padding-top: 20px;
@@ -197,6 +198,10 @@ body {
     font-size: 16px;
     line-height: 19px;
     text-align: right; }
+    @media (max-width: 576px) and (min-width: 1px) {
+      .header__button {
+        font-size: 14px;
+        line-height: 14px; } }
   .header__link {
     font-weight: bold;
     letter-spacing: 0.28px;
@@ -235,8 +240,28 @@ body {
     line-height: 34px;
     color: #002396;
     max-width: 400px; }
+    .login-form__label-password {
+      color: #01134E; }
+  .login-form__block-name {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 400px; }
+    @media (max-width: 576px) and (min-width: 1px) {
+      .login-form__block-name {
+        max-width: 250px; } }
   .login-form__element-helper {
     text-align: right; }
+  .login-form__element-name {
+    width: 45%; }
+    .login-form__element-name .login-form__input {
+      width: 100%; }
+      @media (max-width: 576px) and (min-width: 1px) {
+        .login-form__element-name .login-form__input {
+          max-width: 250px; } }
+    @media (max-width: 576px) and (min-width: 1px) {
+      .login-form__element-name {
+        width: 100%; } }
   .login-form__input {
     border: 2px solid #F2F2F2;
     border-radius: 2px;
@@ -244,7 +269,8 @@ body {
     padding: 10px;
     color: rgba(135, 144, 167, 0.57);
     outline: none;
-    width: 400px; }
+    width: 400px;
+    margin-bottom: 5px; }
     @media (max-width: 576px) and (min-width: 1px) {
       .login-form__input {
         max-width: 250px; } }
@@ -295,20 +321,36 @@ body {
     margin: 0 auto;
     background: rgba(254, 254, 254, 0.54);
     box-shadow: 0px 0px 42px rgba(231, 231, 231, 0.11), 0px 0px 0px 90px rgba(254, 254, 254, 0.54), 0px 0px 164px 132px rgba(231, 231, 231, 0.11), 0px 0px 0px 170px rgba(254, 254, 254, 0.54), 0px 0px 212px rgba(254, 254, 254, 0.54), 0px 0px 0px 240px rgba(254, 254, 254, 0.54), 0px 0px 272px rgba(231, 231, 231, 0.11); }
+    @media (max-width: 576px) and (min-width: 1px) {
+      .password-reset:before {
+        width: 100vw;
+        height: 100vw; } }
   .password-reset__image {
     position: relative;
     width: 150px;
     height: 170px;
     margin-bottom: 30px; }
+    @media (max-width: 576px) and (min-width: 1px) {
+      .password-reset__image {
+        width: 100px;
+        height: 115px; } }
   .password-reset__title {
     position: relative;
     color: #2A74DB;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 48px;
+    line-height: 48px;
     letter-spacing: 0.4px;
     margin: 10px 0; }
+    @media (max-width: 576px) and (min-width: 1px) {
+      .password-reset__title {
+        font-size: 24px;
+        line-height: 24px; } }
   .password-reset__subtitle {
     font-size: 24px;
     line-height: 24px;
     color: #000000;
     margin: 10px 0; }
+    @media (max-width: 576px) and (min-width: 1px) {
+      .password-reset__subtitle {
+        font-size: 18px;
+        line-height: 16px; } }
