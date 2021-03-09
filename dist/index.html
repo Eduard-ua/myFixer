@@ -45,27 +45,27 @@
      </nav>
      <section class="cabinet">
        <p class="cabinet__header">
-         <span class="cabinet__header cabinet__header-personal">
+         <span class="cabinet__header-title cabinet__header-title-active cabinet__header-personal">
           PERSONAL INFORMATION
          </span>
-         <span class="cabinet__header cabinet__header-account">
+         <span class="cabinet__header-title cabinet__header-title-notactive cabinet__header-account">
           ACCOUNT INFORMATION
          </span>
        </p>
-       <article class="cabinet__information cabinet__information-personal">
-        <figure>
-          <img src="../img/person_man.jpg" alt="Man in suit">
-          <figcaption>Change photo</figcaption>
+       <article class="cabinet__information cabinet__information-personal visually-hidden">
+        <figure class="cabinet__information-figure">
+          <img class="cabinet__information-img" src="../img/person_man.jpg" alt="Man in suit" width="136">
+          <figcaption class="cabinet__information-figcaption">Change photo</figcaption>
         </figure>
         <ul class="cabinet__list cabinet__list-personal">
           <li class="cabinet__list-item">
             <label for="first_name" class="cabinet__list-label">First name<br>
-              <input id="first_name" type="text" name="first_name" class="cabinet__list-input">
+              <input id="first_name" type="text" name="first_name" class="cabinet__list-input" value="Faruh">
             </label>
           </li>
           <li class="cabinet__list-item">
             <label for="last_name" class="cabinet__list-label">Last name<br>
-              <input id="last_name" type="text" name="last_name" class="cabinet__list-input">
+              <input id="last_name" type="text" name="last_name" class="cabinet__list-input" value="Bernandez">
             </label>
           </li>
           <li class="cabinet__list-item">
@@ -84,7 +84,7 @@
           </li>
           <li class="cabinet__list-item">
             <label for="country" class="cabinet__list-label">COUNTRY<br>
-              <select class="cabinet__list-input" name="country" id="country">
+              <select class="cabinet__list-input cabinet__list-input-country" name="country" id="country">
                 <option value=" "></option>
                 <option value="UA">UKRAINE</option>
                 <option value="AE">UNITED ARAB EMIRATES</option>
@@ -95,14 +95,14 @@
               </select>
             </label>
           </li>
-          <li class="cabinet__list-item">
+          <li class="cabinet__list-item ">
             <label for="company" class="cabinet__list-label">COMPANY<br>
               <input id="company" type="text" name="company" class="cabinet__list-input">
             </label>
           </li>
         </ul> 
        </article>
-       <article class="cabinet__information cabinet__information-account visually-hidden">
+       <article class="cabinet__information cabinet__information-account ">
         <ul class="cabinet__list cabinet__list-account">
           <li class="cabinet__list-item">
             <label for="username" class="cabinet__list-label">USERNAME<br>

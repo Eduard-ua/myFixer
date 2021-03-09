@@ -411,12 +411,13 @@ body {
   position: relative;
   max-width: 1400px;
   margin: 0 auto;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 120px 60px 60px 140px; }
 
 .main-menu {
   background-color: #01134E;
   width: 80px;
-  height: 100vh;
+  height: 100%;
   box-sizing: border-box;
   position: absolute;
   z-index: 2;
@@ -440,5 +441,94 @@ body {
     width: 20px;
     height: 20px;
     padding: 15px;
-    padding-left: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
     cursor: pointer; }
+
+.cabinet {
+  border: 2px solid red;
+  padding: 60px;
+  background-color: #ffffff; }
+  .cabinet__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #CCD0DC; }
+  .cabinet__header-title {
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #CCD0DC; }
+    .cabinet__header-title-active {
+      border-bottom: 2px solid #2A74DB;
+      color: #01134E;
+      font-weight: 700; }
+
+.cabinet__information {
+  padding-top: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+  .cabinet__information-figure {
+    width: 136px;
+    margin: 0;
+    margin-right: 40px;
+    text-align: center; }
+  .cabinet__information-img {
+    width: 136px;
+    height: 136px;
+    border-radius: 50%; }
+  .cabinet__information-figcaption {
+    margin-top: 6px;
+    margin-left: 10px; }
+  .cabinet__information-figcaption::before {
+    content: "";
+    display: inline-flex;
+    background-image: url("../img/figcaption_pencel.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px; }
+
+.cabinet__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .cabinet__list-item {
+    margin-bottom: 30px; }
+  .cabinet__list-label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #546087;
+    padding-bottom: 5px; }
+  .cabinet__list-input {
+    width: 280px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    padding: 10px 15px; }
+  .cabinet__list-input-country {
+    padding-left: 25px;
+    background-image: url("../img/country_point.svg");
+    background-repeat: no-repeat;
+    background-position: -37% 50%;
+    background-size: 50% 50%; }
+  .cabinet__list-account {
+    width: 100%; }
+  .cabinet__list-account-text {
+    width: 100%;
+    text-align: right; }
