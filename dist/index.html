@@ -13,33 +13,56 @@
   <body>
     <header class="header header-cabinet">
       <ol class="breadcrumb">
-        <li class="breadcrumb__item">Home</li>
-        <li class="breadcrumb__item">My profile</li>
+        <li class="breadcrumb__item">
+          <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="#">My&nbsp;profile</a>
+        </li>
       </ol>
       
       <ol class="personal-settings__list">
         <li class="personal-settings__item">
-          Faruh Bernandez
+          <span>Faruh Bernandez</span>
+          <ul class="personal-settings__sublist">
+            <li class="personal-settings__subitem">
+              Settings
+            </li>
+            <li class="personal-settings__subitem">
+              Status
+            </li>
+            <li class="personal-settings__subitem">
+              Log Out
+            </li>
+          </ul>
         </li>
       </ol>
     </header>
-    <main class="main">
+    <main class="main main-cabinet">
      <nav class="main-menu">
         <a href="#" class="main-menu__logo">
-          <img src="../img/clear_logo.svg" alt="logo" height="30" width="30">
+          <img src="../img/clear_logo.svg" alt="Logo" height="30" width="30">
         </a>
         <ul class="main-menu__list">
           <li class="main-menu__item">
-            <img src="../img/search.svg" alt="search" class="main-menu__img" width="20" height="20">
+            <a href="#">
+              <img src="../img/search.svg" alt="Search" class="main-menu__img" width="20" height="20">
+            </a>
           </li>
           <li class="main-menu__item main-menu__item-active">
-            <img src="../img/person.svg" alt="person" class="main-menu__img" width="20" height="20">
+            <a href="#">
+              <img src="../img/person.svg" alt="My profile" class="main-menu__img" width="20" height="20">
+            </a>
           </li>
           <li class="main-menu__item">
-            <img src="../img/messages.svg" alt="mail" class="main-menu__img" width="20" height="20">
+            <a href="#"></a>  
+              <img src="../img/messages.svg" alt="Messages" class="main-menu__img" width="20" height="20">
+            </a>
           </li>
           <li class="main-menu__item">
-            <img src="../img/calendar.svg" alt="calendar" class="main-menu__img" width="20" height="20">
+            <a href="#">
+              <img src="../img/calendar.svg" alt="Calendar" class="main-menu__img" width="20" height="20">
+            </a>
           </li>
         </ul>
      </nav>
@@ -52,7 +75,8 @@
           ACCOUNT INFORMATION
          </span>
        </p>
-       <article class="cabinet__information cabinet__information-personal visually-hidden">
+       <!-- visually-hidden -->
+       <article class="cabinet__information cabinet__information-personal ">
         <figure class="cabinet__information-figure">
           <img class="cabinet__information-img" src="../img/person_man.jpg" alt="Man in suit" width="136">
           <figcaption class="cabinet__information-figcaption">Change photo</figcaption>
@@ -102,16 +126,17 @@
           </li>
         </ul> 
        </article>
-       <article class="cabinet__information cabinet__information-account ">
+       <!-- visually-hidden -->
+       <article class="cabinet__information cabinet__information-account visually-hidden">
         <ul class="cabinet__list cabinet__list-account">
           <li class="cabinet__list-item">
             <label for="username" class="cabinet__list-label">USERNAME<br>
-              <input id="username" type="text" name="username" class="cabinet__list-input">
+              <input id="username" type="text" name="username" class="cabinet__list-input" value="sarahbarnes">
             </label>
           </li>
           <li class="cabinet__list-item">
             <label for="email" class="cabinet__list-label">E-MAIL<br>
-              <input id="email" type="email" name="email" class="cabinet__list-input">
+              <input id="email" type="email" name="email" class="cabinet__list-input"value="sarahbbb@gmail.com">
             </label>
           </li>
         </ul>

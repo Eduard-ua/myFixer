@@ -76,6 +76,8 @@ body {
   padding-bottom: 40px;
   padding-top: 40px;
   @include bp-576 {
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 50px;
     padding-top: 50px;
   }

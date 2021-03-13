@@ -10,6 +10,9 @@
         display: inline-flex;
         align-items: center;
         user-select: none;
+        @include bp-576 {
+            font-size: 12px;
+        }
     }
 
     &__text::before {
@@ -26,6 +29,7 @@
         background-position: center center;
         background-size: 70% 70%;
     }
+
 
     &__input:checked+.checkbox__text::before {
         background-image: url("../img/checked.svg");

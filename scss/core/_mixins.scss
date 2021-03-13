@@ -11,23 +11,24 @@
     @content;
   }
 }
+
 @mixin bp-768 {
   @media (max-width: 768px) and (min-width: 1px) {
     @content;
   }
 }
 @mixin bp-960 {
-  @media (max-width: 960px) and (min-width: 768px) {
+  @media (max-width: 960px) and (min-width: 1px) {
     @content;
   }
 }
 @mixin bp-1000 {
-  @media (max-width: 1000px) and (min-width: 960px) {
+  @media (max-width: 1000px) and (min-width: 1px) {
     @content;
   }
 }
 @mixin bp-1200 {
-  @media (max-width: 1200px) and (min-width: 960px) {
+  @media (max-width: 1200px) and (min-width: 1px) {
     @content;
   }
 }
