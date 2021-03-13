@@ -349,6 +349,55 @@
             }
         }
         
+        &-input-phone {
+
+                &-country {
+                max-width: 80px;
+                min-width: 60px; 
+                margin-right: 6px;
+
+                @include bp-576 {
+                    max-width: 70px;
+                    min-width: 60px; 
+                }
+            }
+
+            // &-XX {
+            //     background-position: center center;
+            //     background-repeat: no-repeat;
+            //     background-size: 50% 50%;
+            // }
+
+            // &-UA {
+            //     // background-image: url("../img/phone/ua.jpg");
+            //     background-size: 50% 50%;
+            // }
+
+            // &-AE {
+            //     background-image: url("../img/phone/ae.jpg");
+            // }
+
+            // &-GB {
+            //     background-image: url("../img/phone/gb.jpg");
+            // }
+
+            // &-US {
+            //     background-image: url("../img/phone/us.jpg");
+            // }
+
+            // &-UM {
+            //     background-image: url("../img/phone/um.jpg");
+            // }
+        }
+        &-input-phone {
+            max-width: 190px;
+            min-width: 170px;
+            @include bp-576 {
+                max-width: 180px;
+                min-width: 170px; 
+            }
+        }
+
         &-input-country {
             padding-left: 25px;
             background-image: url("../img/country_point.svg");

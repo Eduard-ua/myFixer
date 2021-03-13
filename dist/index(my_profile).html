@@ -101,9 +101,18 @@
               <!-- <input id="title" type="text" name="title" class="cabinet__list-input"> -->
             </label>
           </li>
+
           <li class="cabinet__list-item">
             <label for="phone" class="cabinet__list-label">MOBILE PHONE<br>
-              <input id="phone" type="text" name="phone" class="cabinet__list-input">
+              <select id="country-phone" class="cabinet__list-input cabinet__list-input-phone-country cabinet__list-input-phone-XX cabinet__list-input-phone-UA" name="phone-country" id="phone-country">
+                <option class="cabinet__list-input-phone-XX cabinet__list-input-phone-UA" value="+380">+380</option>
+                <option class="cabinet__list-input-phone-XX cabinet__list-input-phone-AE" value="+971">+971</option>
+                <option class="cabinet__list-input-phone-XX cabinet__list-input-phone-GB" value="+44">+44</option>
+                <option class="cabinet__list-input-phone-XX cabinet__list-input-phone-US" value="+1">+1</option>
+                <option class="cabinet__list-input-phone-XX cabinet__list-input-phone-UM" value="+246">+246</option>
+              </select> 
+              <!-- <input id="country-phone" type="text" name="country-phone" class="cabinet__list-input cabinet__list-input-phone-country"> -->
+              <input id="phone" type="text" name="phone" class="cabinet__list-input cabinet__list-input-phone">
             </label>
           </li>
           <li class="cabinet__list-item">
