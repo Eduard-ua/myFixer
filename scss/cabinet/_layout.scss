@@ -157,6 +157,7 @@
     &__logo {
         display: block;
         margin-left: auto;
+        margin-bottom: 30px;
         margin-right: auto;
         width: 30px;
     }
@@ -338,6 +339,8 @@
             margin-right: 30px;
             box-sizing: border-box;
             padding: 10px 15px;
+            background-color: #fcfcfc;
+            border: 2px solid #F2F2F2;
             @include bp-1200 {
                 margin-right: 15px;
             }
